@@ -9,17 +9,62 @@
 <body>
      <header >
         <nav class="nav">
+            <img src="" alt="">
              <span class="logo">HIDE and SEEK</span> 
                <ul .navItems>
+                
                 <li>Home</li>
                 <li>Resart</li>
                 <li>Pause</li>
                 <li>Resume</li>
                 <li>Scrore</li>
                </ul>
-               
+
         </nav>
      </header>
+     
+    <div class="grid-container">
+
+        <div class="grid-item" > <img class="change" onclick="change()" src="tom&jerry.jpg" alt=""></div>
+        <div class="grid-item" > <img class="change"onclick="change()" src="tom&jerry.jpg" alt=""> </div>
+        <div class="grid-item" > <img class="change" onclick="change()" src="tom&jerry.jpg" alt=""> </div>
+
+
+        <div class="grid-item" > <img class="change" onclick="change()" src="tom&jerry.jpg" alt=""> </div>
+        <div class="grid-item" > <img class="change" onclick="change()" src="tom&jerry.jpg" alt=""> </div>
+        <div class="grid-item" ><img class="change"onclick="change()" src="tom&jerry.jpg" alt=""> </div>
+
+
+        <div class="grid-item" ><img class="change"onclick="change()" src="tom&jerry.jpg" alt=""> </div>
+        <div class="grid-item" ><img class="change"onclick="change()" src="tom&jerry.jpg" alt=""> </div>
+        <div class="grid-item" > <img class="change"onclick="change()" src="tom&jerry.jpg" alt=""> </div>
+
+    </div>
+
+    <script>
+        // function change() {
+        //     document.getElementById("change").src="pass.jpg"
+        //     document.getElementById("change1").src="pass.jpg"
+        //     document.getElementById("change2").src="pass.jpg"
+
+        //     document.getElementById("change3").src="pass.jpg"
+        //     document.getElementById("change4").src="pass.jpg"
+        //     document.getElementById("change5").src="pass.jpg"
+
+        //     document.getElementById("change6").src="pass.jpg"
+        //     document.getElementById("change7").src="pass.jpg"
+        //     document.getElementById("change8").src="pass.jpg"
+
+
+        // }
+        const hey=document.getElementsByClassName("change");
+        for(var i=0;i<9;i++){
+            hey[i].addEventListener("click",function(){
+                this.src="pass.jpg";    
+            });
+        }
+    </script>
     
+
 </body>
 </html>
